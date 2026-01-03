@@ -78,17 +78,18 @@ export default function Contact() {
 
         navigate("/contact/thanks");
       } catch (error) {
+        // eslint-disable-next-line no-console
         console.error("Form submission error:", error);
         setSubmitError(
           error instanceof Error
             ? error.message
-            : "送信中にエラーが発生しました。しばらく経ってから再度お試しください。",
+            : "送信中にエラーが発生しました。しばらく経ってから再度お試しください。"
         );
       } finally {
         setIsSubmitting(false);
       }
     },
-    [navigate, setError],
+    [navigate, setError]
   );
 
   return (
