@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vp dev",
+    "generate:og": "tsx scripts/generate-og-images.ts",
     "build": "tsgo -b && vp build",
     "preview": "vp preview",
     "typecheck": "tsgo --noEmit",
@@ -43,7 +44,10 @@
     "@types/react-dom": "^19.2.2",
     "@typescript/native-preview": "7.0.0-dev.20251110.1",
     "@vitejs/plugin-react": "^5.1.0",
+    "gray-matter": "^4.0.3",
     "jsdom": "^29.0.0",
+    "takumi-js": "^1.0.14",
+    "tsx": "^4.21.0",
     "vite": "catalog:",
     "vite-plus": "catalog:"
   }

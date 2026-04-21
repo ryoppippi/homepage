@@ -30,6 +30,11 @@ worker/.env*
 # Environment
 web/.env*.local
 
+# OGP generation
+web/cache/
+web/fonts/
+web/public/og/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
