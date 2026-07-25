@@ -42,6 +42,9 @@ describe("Construction ページ (現場れんらく帳)", () => {
     expect(
       screen.getByText(/1グループに参加できる公式アカウントは1つまで/)
     ).toBeInTheDocument();
+    expect(
+      screen.getByText(/受信FAXの転送機能」が必要です/)
+    ).toBeInTheDocument();
   });
 
   it("料金の目安セクションを表示する", () => {

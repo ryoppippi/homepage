@@ -37,6 +37,9 @@ describe("Food ページ (受注れんらく帳)", () => {
       screen.getByText("受注のFAXは、複合機の転送設定でそのまま取り込み")
     ).toBeInTheDocument();
     expect(screen.getByText(/賞味期限・ロットの実地確認/)).toBeInTheDocument();
+    expect(
+      screen.getByText(/受信FAXの転送機能」が必要です/)
+    ).toBeInTheDocument();
   });
 
   it("料金の目安セクションを表示する", () => {
