@@ -39,6 +39,14 @@ describe("Food ページ (受注れんらく帳)", () => {
     expect(screen.getByText(/賞味期限・ロットの実地確認/)).toBeInTheDocument();
   });
 
+  it("料金の目安セクションを表示する", () => {
+    renderFood();
+
+    expect(
+      screen.getByRole("heading", { name: "料金の目安" })
+    ).toBeInTheDocument();
+  });
+
   it("メールでの相談CTAと、フォームからの相談導線の両方を表示する", () => {
     renderFood();
 

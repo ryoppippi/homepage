@@ -44,6 +44,14 @@ describe("Logistics ページ (運行れんらく帳)", () => {
     ).toBeInTheDocument();
   });
 
+  it("料金の目安セクションを表示する", () => {
+    renderLogistics();
+
+    expect(
+      screen.getByRole("heading", { name: "料金の目安" })
+    ).toBeInTheDocument();
+  });
+
   it("メールでの相談CTAと、フォームからの相談導線の両方を表示する", () => {
     renderLogistics();
 

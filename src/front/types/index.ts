@@ -115,6 +115,12 @@ export interface PricingTier {
   description: string;
 }
 
+export interface SolutionPricingItem {
+  label: string;
+  price: string;
+  items: string[];
+}
+
 export interface CaseMetric {
   label: string;
   value: string;

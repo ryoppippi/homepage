@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import SolutionPricingSection from "../../components/sections/SolutionPricingSection";
 import { usePageTitle } from "../../hooks/usePageTitle";
 
 const MAILTO_HREF =
@@ -424,6 +425,9 @@ export default function Construction() {
           </div>
         </div>
       </section>
+
+      {/* 料金の目安 */}
+      <SolutionPricingSection accentColor="#EA580C" accentDark="#C2410C" />
 
       {/* 相談の流れ */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
