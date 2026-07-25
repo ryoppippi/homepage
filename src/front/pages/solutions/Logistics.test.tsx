@@ -21,20 +21,45 @@ describe("Logistics ページ (運行れんらく帳)", () => {
 
     expect(
       screen.getByRole("heading", {
-        name: /紙の運転日報、請求書への手入力に毎月何時間かけていますか/,
+        name: /紙の運転日報から請求書への手入力作業をなくします/,
       })
     ).toBeInTheDocument();
 
-    expect(screen.getByText("配車計画がベテラン頼み")).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "対象となる課題" })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText("配車計画が特定の担当者に依存")
+    ).toBeInTheDocument();
     expect(screen.getAllByText(/4%/).length).toBeGreaterThan(0);
     expect(screen.getAllByText(/国交省/).length).toBeGreaterThan(0);
   });
 
-  it("仕組み(3ステップ)と先にお伝えしておくことを表示する", () => {
+  it("仕組みの3ステップの見出しを表示する", () => {
     renderLogistics();
 
     expect(
-      screen.getByText("紙の運転日報は、写真を撮るだけで自動集計")
+      screen.getByRole("heading", {
+        name: "現在お使いの配車連絡のLINEグループに、アカウントを1つ招待",
+      })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", {
+        name: "紙の運転日報は、写真を撮るだけで自動集計",
+      })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", {
+        name: "AIが運行日報を仕分けて、請求書のもとになる記録を自動作成",
+      })
+    ).toBeInTheDocument();
+  });
+
+  it("ご利用にあたっての制約と前提を表示する", () => {
+    renderLogistics();
+
+    expect(
+      screen.getByText("ご利用にあたっての制約と前提")
     ).toBeInTheDocument();
     expect(
       screen.getByText(/電話でのやり取りは自動記録の対象外/)

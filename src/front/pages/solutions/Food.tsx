@@ -66,9 +66,9 @@ export default function Food() {
               食品業さま向け
             </p>
             <h1 className="max-w-5xl font-['Zen_Kaku_Gothic_New'] text-3xl font-black leading-snug text-[#1E293B] sm:text-4xl lg:text-5xl">
-              毎朝届くFAXの注文書、
+              毎朝届くFAXの注文書の
               <br />
-              入力するだけで一日が終わっていませんか。
+              入力作業を自動化します。
             </h1>
             <img
               src="/images/solutions/food/hero.webp"
@@ -80,7 +80,7 @@ export default function Food() {
               fetchPriority="high"
             />
             <p className="mt-6 max-w-2xl text-base leading-relaxed sm:text-lg">
-              取引先のFAX・電話はいまのまま変えずに、受注を自動で記録して販売管理表に整理する仕組みを、御社の商品数・受注枚数に合わせてつくります。
+              取引先のFAX・電話は現在のまま変えずに、受注を自動で記録して販売管理表に整理する仕組みを、御社の商品数・受注枚数に合わせて構築します。
             </p>
             <ul className="mt-8 flex flex-wrap gap-3 text-sm font-bold text-[#1E293B]">
               <li className="rounded-md border border-[#E2E8F0] bg-[#F8FAFC] px-3 py-2">
@@ -119,7 +119,7 @@ export default function Food() {
       {/* 課題共感 */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <h2 className="border-l-4 border-[#DC2626] pl-4 font-['Zen_Kaku_Gothic_New'] text-2xl font-black text-[#1E293B] sm:text-3xl">
-          こんな毎日になっていませんか
+          対象となる課題
         </h2>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           <div className="rounded-lg border border-[#E2E8F0] bg-white p-6">
@@ -127,23 +127,23 @@ export default function Food() {
               FAX・電話受注の手入力
             </h3>
             <p className="mt-2 text-sm leading-relaxed">
-              毎朝届くFAXや電話の注文書を、事務の方が販売管理システムに打ち直す作業が続いている。
+              毎朝届くFAXや電話の注文を、事務担当者が販売管理システムへ打ち直す作業が続いています。
             </p>
           </div>
           <div className="rounded-lg border border-[#E2E8F0] bg-white p-6">
             <h3 className="font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
-              製品別の原価が見えない
+              製品別の原価が把握できない
             </h3>
             <p className="mt-2 text-sm leading-relaxed">
-              製品ごとの原価計算ができておらず、値上げ交渉の根拠も作れない。赤字製品に気づかないまま売っているかもしれない。
+              製品ごとの原価計算ができておらず、値上げ交渉の根拠を作れません。赤字製品を把握できないまま販売している可能性があります。
             </p>
           </div>
           <div className="rounded-lg border border-[#E2E8F0] bg-white p-6">
             <h3 className="font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
-              賞味期限・ロット管理がExcel頼み
+              賞味期限・ロット管理がExcel依存
             </h3>
             <p className="mt-2 text-sm leading-relaxed">
-              目視+紙+Excelでの管理が続き、入力ミスが廃棄や出荷トラブルに直結する。「最新版がどれか分からない」ことも。
+              目視・紙・Excelでの管理が続き、入力ミスが廃棄や出荷トラブルに直結します。「最新版がどれか分からない」という事態も発生します。
             </p>
           </div>
         </div>
@@ -164,7 +164,7 @@ export default function Food() {
                 67<span className="text-xl">%</span>
               </p>
               <p className="mt-3 text-sm leading-relaxed">
-                受注方法は「FAX」が最多。いまも受注の主役はFAXという会社さんが多数派
+                受注方法は「FAX」が最多。いまも受注の主役はFAXという企業が多数派
               </p>
               <p className="mt-3 text-xs text-[#64748B]">
                 出典: ハンモック「食品業の受注業務に関する実態調査」
@@ -199,7 +199,7 @@ export default function Food() {
       {/* Before / After */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <h2 className="border-l-4 border-[#DC2626] pl-4 font-['Zen_Kaku_Gothic_New'] text-2xl font-black text-[#1E293B] sm:text-3xl">
-          変わるのは事務所だけ。取引先はいつも通り。
+          変更が必要なのは事務所の作業のみで、取引先の運用は変わりません
         </h2>
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
           <div className="rounded-lg border border-[#E2E8F0] bg-white p-6 sm:p-8">
@@ -212,7 +212,7 @@ export default function Food() {
               loading="lazy"
             />
             <p className="inline-block rounded-md bg-[#E2E8F0] px-3 py-1 text-sm font-bold text-[#334155]">
-              いま
+              現状
             </p>
             <ol className="mt-6 space-y-4 text-sm leading-relaxed">
               <li className="flex gap-3">
@@ -225,7 +225,7 @@ export default function Food() {
                 <span className="mt-0.5 font-['Zen_Kaku_Gothic_New'] font-black text-[#94A3B8]">
                   2
                 </span>
-                事務の方が販売管理システムに手入力する
+                事務担当者が販売管理システムに手入力する
               </li>
               <li className="flex gap-3">
                 <span className="mt-0.5 font-['Zen_Kaku_Gothic_New'] font-black text-[#94A3B8]">
@@ -251,7 +251,7 @@ export default function Food() {
               loading="lazy"
             />
             <p className="inline-block rounded-md bg-[#DC2626] px-3 py-1 text-sm font-bold text-white">
-              受注れんらく帳を入れると
+              受注れんらく帳の導入後
             </p>
             <ol className="mt-6 space-y-4 text-sm leading-relaxed">
               <li className="flex gap-3">
@@ -259,16 +259,14 @@ export default function Food() {
                   1
                 </span>
                 取引先の注文手段は
-                <strong className="font-bold text-[#1E293B]">
-                  いままで通り
-                </strong>
+                <strong className="font-bold text-[#1E293B]">従来通り</strong>
                 (FAX・電話も)
               </li>
               <li className="flex gap-3">
                 <span className="mt-0.5 font-['Zen_Kaku_Gothic_New'] font-black text-[#B91C1C]">
                   2
                 </span>
-                注文は自動で取り込まれ、販売管理表に反映される
+                注文はスキャンして送るだけで、販売管理表に自動で反映される
               </li>
               <li className="flex gap-3">
                 <span className="mt-0.5 font-['Zen_Kaku_Gothic_New'] font-black text-[#B91C1C]">
@@ -291,10 +289,10 @@ export default function Food() {
       <section className="border-y border-[#E2E8F0] bg-white">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
           <h2 className="border-l-4 border-[#DC2626] pl-4 font-['Zen_Kaku_Gothic_New'] text-2xl font-black text-[#1E293B] sm:text-3xl">
-            仕組みは、受け取り口を足すだけ
+            仕組みは、受け取り口を追加するだけ
           </h2>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed sm:text-base">
-            新しいシステムに「入力してもらう」のではありません。いまの受注の通り道に受け取り口を1つずつ足して、仕分け係をAIが引き受けます。
+            新しいシステムへの入力を求めるものではありません。現在の受注経路に受け取り口を1つずつ追加し、仕分けをAIが担います。
           </p>
           <ol className="mt-10 grid gap-6 md:grid-cols-3">
             <li className="rounded-lg border border-[#E2E8F0] bg-[#F8FAFC] p-6">
@@ -302,18 +300,18 @@ export default function Food() {
                 src="/images/solutions/food/how-fax.webp"
                 width="800"
                 height="800"
-                alt="複合機で受信したFAX注文が自動で取り込まれるイラスト"
+                alt="届いたFAX注文書を複合機でスキャンして取り込むイラスト"
                 className="mb-4 aspect-square w-full rounded-md"
                 loading="lazy"
               />
               <p className="font-['Zen_Kaku_Gothic_New'] text-sm font-black text-[#B91C1C]">
-                その1
+                STEP 1
               </p>
               <h3 className="mt-2 font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
-                受注のFAXは、複合機の転送設定でそのまま取り込み
+                受注のFAXは、届いた紙をスキャンして送るだけ
               </h3>
               <p className="mt-2 text-sm leading-relaxed">
-                FAX番号は変わりません。取引先は今まで通り。受信したFAX注文が自動で読み取られ、記録に加わります。
+                FAX番号は変わりません。取引先は今まで通り。届いた注文書をスキャン(またはスマホで撮影)して送れば、あとはAIが読み取って記録に加えます。
               </p>
             </li>
             <li className="rounded-lg border border-[#E2E8F0] bg-[#F8FAFC] p-6">
@@ -326,7 +324,7 @@ export default function Food() {
                 loading="lazy"
               />
               <p className="font-['Zen_Kaku_Gothic_New'] text-sm font-black text-[#B91C1C]">
-                その2
+                STEP 2
               </p>
               <h3 className="mt-2 font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
                 電話での注文も、ひと言吹き込むだけで自動記録
@@ -345,29 +343,29 @@ export default function Food() {
                 loading="lazy"
               />
               <p className="font-['Zen_Kaku_Gothic_New'] text-sm font-black text-[#B91C1C]">
-                その3
+                STEP 3
               </p>
               <h3 className="mt-2 font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
-                AIが商品・数量を仕分けて、いまの受注管理表の形式で自動記入
+                AIが商品・数量を仕分けて、現在の受注管理表の形式で自動記入
               </h3>
               <p className="mt-2 text-sm leading-relaxed">
-                「どの取引先の・何を・いくつの注文か」をAIが判別し、いまお使いの受注管理表の形式のまま自動で埋めていきます。
+                「どの取引先の・どの商品を・何個の注文か」をAIが判別し、現在お使いの受注管理表の形式のまま自動で埋めていきます。
               </p>
             </li>
           </ol>
           <div className="mt-8 max-w-3xl rounded-lg border border-[#E2E8F0] bg-[#F8FAFC] p-5 text-sm leading-relaxed">
             <p className="font-['Zen_Kaku_Gothic_New'] font-bold text-[#1E293B]">
-              先にお伝えしておくこと
+              ご利用にあたっての制約と前提
             </p>
             <ul className="mt-2 list-disc space-y-1 pl-5 text-[#334155]">
               <li>
                 賞味期限・ロットの実地確認(現物突合)は引き続き必要です。記録・転記の手間だけを減らします。
               </li>
               <li>
-                記録が始まるのは、転送設定・運用開始をした日からです。過去の注文履歴は遡れません。
+                記録が始まるのは、運用開始をした日からです。過去の注文履歴は遡れません。
               </li>
               <li>
-                FAXの自動取り込みには、ご利用中の複合機に「受信FAXの転送機能」が必要です。対応していない機種の場合は、受信したFAXをスマホで撮影して取り込む方法で対応します(ご相談時に機種を確認させていただきます)。
+                FAXは自動では取り込まれません。届いた紙をスキャンまたは撮影して送っていただく操作が必要です(そのぶん複合機の設定変更や機種の制約はありません)。
               </li>
             </ul>
           </div>
@@ -378,10 +376,10 @@ export default function Food() {
       <section>
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
           <h2 className="border-l-4 border-[#DC2626] pl-4 font-['Zen_Kaku_Gothic_New'] text-2xl font-black text-[#1E293B] sm:text-3xl">
-            つくるときの3つの約束
+            システム構築における3つの約束
           </h2>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed sm:text-base">
-            私たちは既製品のアプリを売る会社ではありません。御社の受注枚数・商品数を先に伺い、それに合わせて必要な分だけ仕組みをつくる会社です。
+            私たちは既製品のアプリを販売する会社ではありません。御社の受注枚数・商品数を先に伺い、それに合わせて必要な分だけ仕組みを構築する会社です。
           </p>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             <div className="rounded-lg border border-[#E2E8F0] bg-white p-6">
@@ -389,7 +387,7 @@ export default function Food() {
                 現場の入力は3項目以下
               </h3>
               <p className="mt-2 text-sm leading-relaxed">
-                入力が多い仕組みは必ず使われなくなります。事務の方にお願いする操作は、多くても3つまでに絞って設計します。
+                入力が多い仕組みは必ず使われなくなります。事務担当者に依頼する操作は、多くても3つまでに絞って設計します。
               </p>
             </div>
             <div className="rounded-lg border border-[#E2E8F0] bg-white p-6">
@@ -397,7 +395,7 @@ export default function Food() {
                 取引先の注文手段を変えない
               </h3>
               <p className="mt-2 text-sm leading-relaxed">
-                取引先さんに「FAXをやめてください」とは言いません。FAX・電話での注文を、そのまま記録に変えます。
+                取引先へFAXの停止を求めることはありません。FAX・電話での注文を、そのまま記録に変えます。
               </p>
             </div>
             <div className="rounded-lg border border-[#E2E8F0] bg-white p-6">
@@ -405,7 +403,7 @@ export default function Food() {
                 必要な分だけの最小構成
               </h3>
               <p className="mt-2 text-sm leading-relaxed">
-                高機能で高額なシステムは提案しません。効果の大きいところから小さく始めて、合わなければやめられる形にします。
+                高機能で高額なシステムは提案しません。効果の大きいところから小さく始めて、合わない場合は中止できる形にします。
               </p>
             </div>
           </div>
@@ -441,10 +439,10 @@ export default function Food() {
               STEP 2
             </p>
             <h3 className="mt-2 font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
-              15分だけ現状を伺う
+              15分で現状を確認
             </h3>
             <p className="mt-2 text-sm leading-relaxed">
-              受注手段・商品数・困っている場面を、オンラインで15分だけ伺います。資料のご用意は不要です。
+              受注手段・商品数・課題が生じている場面を、オンラインで15分お伺いします。資料のご用意は不要です。
             </p>
           </li>
           <li className="rounded-lg border border-[#E2E8F0] bg-white p-6">
@@ -452,10 +450,10 @@ export default function Food() {
               STEP 3
             </p>
             <h3 className="mt-2 font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
-              できること・やめた方がいいことをご回答
+              実現できること・推奨しないことをご回答
             </h3>
             <p className="mt-2 text-sm leading-relaxed">
-              御社の受注枚数・商品数の場合に何が自動化できるか、そして「仕組み化しない方がいい部分」まで含めて無料でお答えします。その場で契約を迫ることはありません。
+              御社の受注枚数・商品数の場合に何が自動化できるか、そして「仕組み化を推奨しない部分」まで含めて無料でお答えします。その場で契約を求めることはありません。
             </p>
           </li>
         </ol>
@@ -465,10 +463,10 @@ export default function Food() {
       <section className="bg-[#1E293B]">
         <div className="mx-auto max-w-6xl px-4 py-16 text-center sm:px-6 sm:py-20 lg:px-8">
           <h2 className="font-['Zen_Kaku_Gothic_New'] text-2xl font-black text-white sm:text-3xl">
-            まずは15分、いまのやり方を聞かせてください
+            まずは15分、現在の運用についてお聞かせください
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-[#94A3B8] sm:text-base">
-            無料です。売り込みはしません。「うちの場合は何ができるのか」への答えだけ持ち帰ってください。
+            相談は無料で、営業活動は行いません。「自社の場合に何が実現できるか」への回答をお持ち帰りいただけます。
           </p>
           <MailCta className="mt-8" />
           <p className="mt-4 text-sm text-[#94A3B8]">

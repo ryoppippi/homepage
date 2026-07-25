@@ -21,20 +21,43 @@ describe("Construction ページ (現場れんらく帳)", () => {
 
     expect(
       screen.getByRole("heading", {
-        name: /協力会社との連絡、「言った言わない」になっていませんか/,
+        name: /協力会社との連絡を記録に残し、「言った言わない」をなくします/,
       })
     ).toBeInTheDocument();
 
-    expect(screen.getByText("連絡手段がバラバラ")).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "対象となる課題" })
+    ).toBeInTheDocument();
+    expect(screen.getByText("連絡手段が統一されていない")).toBeInTheDocument();
     expect(screen.getAllByText(/28\.3/).length).toBeGreaterThan(0);
     expect(screen.getByText(/ANDPAD/)).toBeInTheDocument();
   });
 
-  it("仕組み(3ステップ)と先にお伝えしておくことを表示する", () => {
+  it("仕組みの3ステップの見出しを表示する", () => {
     renderConstruction();
 
     expect(
-      screen.getByText("いつものLINEグループに、アカウントを1つ招待")
+      screen.getByRole("heading", {
+        name: "現在お使いのLINEグループに、アカウントを1つ招待",
+      })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", {
+        name: "FAXは、受け取った紙をスキャンして送るだけ",
+      })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", {
+        name: "AIが現場ごとに仕分けて、現在の台帳形式で記入",
+      })
+    ).toBeInTheDocument();
+  });
+
+  it("ご利用にあたっての制約と前提を表示する", () => {
+    renderConstruction();
+
+    expect(
+      screen.getByText("ご利用にあたっての制約と前提")
     ).toBeInTheDocument();
     expect(
       screen.getByText(/電話の通話内容は自動記録の対象外/)
@@ -43,7 +66,9 @@ describe("Construction ページ (現場れんらく帳)", () => {
       screen.getByText(/1グループに参加できる公式アカウントは1つまで/)
     ).toBeInTheDocument();
     expect(
-      screen.getByText(/受信FAXの転送機能」が必要です/)
+      screen.getByText(
+        "FAXは自動では取り込まれません。受け取った紙をスキャンまたは撮影して送っていただく操作が必要です(そのぶん複合機の設定変更や機種の制約はありません)。"
+      )
     ).toBeInTheDocument();
   });
 

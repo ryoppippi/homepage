@@ -66,9 +66,9 @@ export default function Logistics() {
               運輸・物流業さま向け
             </p>
             <h1 className="max-w-5xl font-['Zen_Kaku_Gothic_New'] text-3xl font-black leading-snug text-[#1E293B] sm:text-4xl lg:text-5xl">
-              紙の運転日報、請求書への手入力に
+              紙の運転日報から請求書への
               <br />
-              毎月何時間かけていますか。
+              手入力作業をなくします。
             </h1>
             <img
               src="/images/solutions/logistics/hero.webp"
@@ -80,7 +80,7 @@ export default function Logistics() {
               fetchPriority="high"
             />
             <p className="mt-6 max-w-2xl text-base leading-relaxed sm:text-lg">
-              配車連絡・紙の運転日報。いまの手段はそのままに、日報から請求書のもとになる記録までを自動で作る仕組みを、御社の運行形態に合わせてつくります。
+              配車連絡・紙の運転日報。現在の手段はそのままに、日報から請求書のもとになる記録までを自動で作成する仕組みを、御社の運行形態に合わせて構築します。
             </p>
             <ul className="mt-8 flex flex-wrap gap-3 text-sm font-bold text-[#1E293B]">
               <li className="rounded-md border border-[#E2E8F0] bg-[#F8FAFC] px-3 py-2">
@@ -119,31 +119,31 @@ export default function Logistics() {
       {/* 課題共感 */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <h2 className="border-l-4 border-[#0D9488] pl-4 font-['Zen_Kaku_Gothic_New'] text-2xl font-black text-[#1E293B] sm:text-3xl">
-          こんな毎日になっていませんか
+          対象となる課題
         </h2>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           <div className="rounded-lg border border-[#E2E8F0] bg-white p-6">
             <h3 className="font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
-              配車計画がベテラン頼み
+              配車計画が特定の担当者に依存
             </h3>
             <p className="mt-2 text-sm leading-relaxed">
-              配車係の経験と勘に依存し、Excelでの管理も限界に近い。もしその方が抜けたら、配車表は誰が引き継げるだろうか。
+              配車係の経験と勘に依存し、Excelでの管理が限界に近づいています。担当者が離職した場合、配車表を引き継げる人材がいません。
             </p>
           </div>
           <div className="rounded-lg border border-[#E2E8F0] bg-white p-6">
             <h3 className="font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
-              紙の日報が請求書になるまでが長い
+              日報から請求書までの工程が長い
             </h3>
             <p className="mt-2 text-sm leading-relaxed">
-              運転日報(紙)を事務の方が請求書に手入力し、印刷・郵送。取引先ごとにフォーマットが違い、月末にまとめて負担が来る。
+              紙の運転日報を事務担当者が請求書へ手入力し、印刷・郵送しています。取引先ごとにフォーマットが異なるため、月末に負担が集中します。
             </p>
           </div>
           <div className="rounded-lg border border-[#E2E8F0] bg-white p-6">
             <h3 className="font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
-              受発注はいまも紙・FAX
+              受発注が紙・FAX中心
             </h3>
             <p className="mt-2 text-sm leading-relaxed">
-              契約・見積・受注のやり取りが紙・FAX中心。デジタル化したい気持ちはあっても、何から手を付ければいいか分からない。
+              契約・見積・受注のやり取りが紙とFAX中心です。デジタル化の必要性は認識していても、着手する順序が定まりません。
             </p>
           </div>
         </div>
@@ -199,7 +199,7 @@ export default function Logistics() {
       {/* Before / After */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <h2 className="border-l-4 border-[#0D9488] pl-4 font-['Zen_Kaku_Gothic_New'] text-2xl font-black text-[#1E293B] sm:text-3xl">
-          変わるのは事務所だけ。配車も日報もいつも通り。
+          変更が必要なのは事務所の作業のみで、配車と日報の運用は変わりません
         </h2>
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
           <div className="rounded-lg border border-[#E2E8F0] bg-white p-6 sm:p-8">
@@ -212,7 +212,7 @@ export default function Logistics() {
               loading="lazy"
             />
             <p className="inline-block rounded-md bg-[#E2E8F0] px-3 py-1 text-sm font-bold text-[#334155]">
-              いま
+              現状
             </p>
             <ol className="mt-6 space-y-4 text-sm leading-relaxed">
               <li className="flex gap-3">
@@ -251,7 +251,7 @@ export default function Logistics() {
               loading="lazy"
             />
             <p className="inline-block rounded-md bg-[#0D9488] px-3 py-1 text-sm font-bold text-white">
-              運行れんらく帳を入れると
+              運行れんらく帳の導入後
             </p>
             <ol className="mt-6 space-y-4 text-sm leading-relaxed">
               <li className="flex gap-3">
@@ -259,9 +259,7 @@ export default function Logistics() {
                   1
                 </span>
                 連絡手段は
-                <strong className="font-bold text-[#1E293B]">
-                  いままで通り
-                </strong>
+                <strong className="font-bold text-[#1E293B]">従来通り</strong>
                 (紙日報・電話も)
               </li>
               <li className="flex gap-3">
@@ -291,10 +289,10 @@ export default function Logistics() {
       <section className="border-y border-[#E2E8F0] bg-white">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
           <h2 className="border-l-4 border-[#0D9488] pl-4 font-['Zen_Kaku_Gothic_New'] text-2xl font-black text-[#1E293B] sm:text-3xl">
-            仕組みは、受け取り口を足すだけ
+            仕組みは、受け取り口を追加するだけ
           </h2>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed sm:text-base">
-            新しいシステムに「入力してもらう」のではありません。いまの連絡・報告の通り道に受け取り口を1つずつ足して、仕分け係をAIが引き受けます。
+            新しいシステムへの入力を求めるものではありません。現在の連絡・報告経路に受け取り口を1つずつ追加し、仕分けをAIが担います。
           </p>
           <ol className="mt-10 grid gap-6 md:grid-cols-3">
             <li className="rounded-lg border border-[#E2E8F0] bg-[#F8FAFC] p-6">
@@ -307,13 +305,13 @@ export default function Logistics() {
                 loading="lazy"
               />
               <p className="font-['Zen_Kaku_Gothic_New'] text-sm font-black text-[#0F766E]">
-                その1
+                STEP 1
               </p>
               <h3 className="mt-2 font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
-                いつもの配車連絡のLINEグループに、アカウントを1つ招待
+                現在お使いの配車連絡のLINEグループに、アカウントを1つ招待
               </h3>
               <p className="mt-2 text-sm leading-relaxed">
-                ドライバーさんのアプリ追加・操作変更はゼロ。招待した日から、配車連絡が自動で記録されていきます。
+                ドライバー側でのアプリの追加や操作の変更は不要です。招待した日から、配車連絡が自動で記録されていきます。
               </p>
             </li>
             <li className="rounded-lg border border-[#E2E8F0] bg-[#F8FAFC] p-6">
@@ -326,7 +324,7 @@ export default function Logistics() {
                 loading="lazy"
               />
               <p className="font-['Zen_Kaku_Gothic_New'] text-sm font-black text-[#0F766E]">
-                その2
+                STEP 2
               </p>
               <h3 className="mt-2 font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
                 紙の運転日報は、写真を撮るだけで自動集計
@@ -345,7 +343,7 @@ export default function Logistics() {
                 loading="lazy"
               />
               <p className="font-['Zen_Kaku_Gothic_New'] text-sm font-black text-[#0F766E]">
-                その3
+                STEP 3
               </p>
               <h3 className="mt-2 font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
                 AIが運行日報を仕分けて、請求書のもとになる記録を自動作成
@@ -357,7 +355,7 @@ export default function Logistics() {
           </ol>
           <div className="mt-8 max-w-3xl rounded-lg border border-[#E2E8F0] bg-[#F8FAFC] p-5 text-sm leading-relaxed">
             <p className="font-['Zen_Kaku_Gothic_New'] font-bold text-[#1E293B]">
-              先にお伝えしておくこと
+              ご利用にあたっての制約と前提
             </p>
             <ul className="mt-2 list-disc space-y-1 pl-5 text-[#334155]">
               <li>
@@ -378,10 +376,10 @@ export default function Logistics() {
       <section>
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
           <h2 className="border-l-4 border-[#0D9488] pl-4 font-['Zen_Kaku_Gothic_New'] text-2xl font-black text-[#1E293B] sm:text-3xl">
-            つくるときの3つの約束
+            システム構築における3つの約束
           </h2>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed sm:text-base">
-            私たちは既製品のアプリを売る会社ではありません。御社の運行形態を先に伺い、それに合わせて必要な分だけ仕組みをつくる会社です。
+            私たちは既製品のアプリを販売する会社ではありません。御社の運行形態を先に伺い、それに合わせて必要な分だけ仕組みを構築する会社です。
           </p>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             <div className="rounded-lg border border-[#E2E8F0] bg-white p-6">
@@ -389,15 +387,15 @@ export default function Logistics() {
                 現場の入力は3項目以下
               </h3>
               <p className="mt-2 text-sm leading-relaxed">
-                入力が多い仕組みは必ず使われなくなります。ドライバーさんにお願いする操作は、多くても3つまでに絞って設計します。
+                入力が多い仕組みは必ず使われなくなります。ドライバーに依頼する操作は、多くても3つまでに絞って設計します。
               </p>
             </div>
             <div className="rounded-lg border border-[#E2E8F0] bg-white p-6">
               <h3 className="font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
-                いまの連絡手段を変えない
+                現在の連絡手段を変えない
               </h3>
               <p className="mt-2 text-sm leading-relaxed">
-                取引先や協力会社さんに「新しいアプリを入れてください」とは言いません。紙日報・電話・LINEのやり取りを、そのまま記録に変えます。
+                取引先や協力会社へ新しいアプリの導入を求めることはありません。紙日報・電話・LINEのやり取りを、そのまま記録に変えます。
               </p>
             </div>
             <div className="rounded-lg border border-[#E2E8F0] bg-white p-6">
@@ -405,7 +403,7 @@ export default function Logistics() {
                 必要な分だけの最小構成
               </h3>
               <p className="mt-2 text-sm leading-relaxed">
-                高機能で高額なシステムは提案しません。効果の大きいところから小さく始めて、合わなければやめられる形にします。
+                高機能で高額なシステムは提案しません。効果の大きいところから小さく始めて、合わない場合は中止できる形にします。
               </p>
             </div>
           </div>
@@ -441,10 +439,10 @@ export default function Logistics() {
               STEP 2
             </p>
             <h3 className="mt-2 font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
-              15分だけ現状を伺う
+              15分で現状を確認
             </h3>
             <p className="mt-2 text-sm leading-relaxed">
-              配車のやり方・日報のつけ方・困っている場面を、オンラインで15分だけ伺います。資料のご用意は不要です。
+              配車の進め方・日報の記録方法・課題が生じている場面を、オンラインで15分お伺いします。資料のご用意は不要です。
             </p>
           </li>
           <li className="rounded-lg border border-[#E2E8F0] bg-white p-6">
@@ -452,10 +450,10 @@ export default function Logistics() {
               STEP 3
             </p>
             <h3 className="mt-2 font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
-              できること・やめた方がいいことをご回答
+              実現できること・推奨しないことをご回答
             </h3>
             <p className="mt-2 text-sm leading-relaxed">
-              御社の運行形態の場合に何が自動化できるか、そして「仕組み化しない方がいい部分」まで含めて無料でお答えします。その場で契約を迫ることはありません。
+              御社の運行形態の場合に何が自動化できるか、そして「仕組み化を推奨しない部分」まで含めて無料でお答えします。その場で契約を求めることはありません。
             </p>
           </li>
         </ol>
@@ -465,10 +463,10 @@ export default function Logistics() {
       <section className="bg-[#1E293B]">
         <div className="mx-auto max-w-6xl px-4 py-16 text-center sm:px-6 sm:py-20 lg:px-8">
           <h2 className="font-['Zen_Kaku_Gothic_New'] text-2xl font-black text-white sm:text-3xl">
-            まずは15分、いまのやり方を聞かせてください
+            まずは15分、現在の運用についてお聞かせください
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-[#94A3B8] sm:text-base">
-            無料です。売り込みはしません。「うちの場合は何ができるのか」への答えだけ持ち帰ってください。
+            相談は無料で、営業活動は行いません。「自社の場合に何が実現できるか」への回答をお持ち帰りいただけます。
           </p>
           <MailCta className="mt-8" />
           <p className="mt-4 text-sm text-[#94A3B8]">

@@ -66,9 +66,9 @@ export default function Construction() {
               建設会社さま向け
             </p>
             <h1 className="max-w-5xl font-['Zen_Kaku_Gothic_New'] text-3xl font-black leading-snug text-[#1E293B] sm:text-4xl lg:text-5xl">
-              協力会社との連絡、
+              協力会社との連絡を記録に残し、
               <br />
-              「言った言わない」になっていませんか。
+              「言った言わない」をなくします。
             </h1>
             <img
               src="/images/solutions/construction/hero.webp"
@@ -80,7 +80,7 @@ export default function Construction() {
               fetchPriority="high"
             />
             <p className="mt-6 max-w-2xl text-base leading-relaxed sm:text-lg">
-              FAX・電話・LINE。連絡手段はいまのまま変えずに、やり取りを自動で記録して台帳に整理する仕組みを、御社の業務に合わせてつくります。現場に新しいアプリの入力は求めません。
+              FAX・電話・LINE。連絡手段は現在のまま変えずに、やり取りを自動で記録して台帳に整理する仕組みを、御社の業務に合わせて構築します。現場に新しいアプリの入力は求めません。
             </p>
             <ul className="mt-8 flex flex-wrap gap-3 text-sm font-bold text-[#1E293B]">
               <li className="rounded-md border border-[#E2E8F0] bg-[#F8FAFC] px-3 py-2">
@@ -119,31 +119,31 @@ export default function Construction() {
       {/* 課題共感 */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <h2 className="border-l-4 border-[#EA580C] pl-4 font-['Zen_Kaku_Gothic_New'] text-2xl font-black text-[#1E293B] sm:text-3xl">
-          こんな毎日になっていませんか
+          対象となる課題
         </h2>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           <div className="rounded-lg border border-[#E2E8F0] bg-white p-6">
             <h3 className="font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
-              連絡手段がバラバラ
+              連絡手段が統一されていない
             </h3>
             <p className="mt-2 text-sm leading-relaxed">
-              A社はFAX、B社は電話、C社はLINE。どこで何を伝えたか追えなくなり、「言った言わない」で手戻りが起きる。
+              A社はFAX、B社は電話、C社はLINEと手段が分かれるため、どこで何を伝えたかを追跡できず、「言った言わない」による手戻りが発生します。
             </p>
           </div>
           <div className="rounded-lg border border-[#E2E8F0] bg-white p-6">
             <h3 className="font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
-              事務作業が終わらない
+              事務作業の負荷が高い
             </h3>
             <p className="mt-2 text-sm leading-relaxed">
-              現場から戻ってから、メモと記憶を頼りに台帳へ転記。報告書と書類仕事のために残業が積み上がっていく。
+              現場から戻った後、メモと記憶を頼りに台帳へ転記する必要があり、報告書と書類作成のための残業が積み上がります。
             </p>
           </div>
           <div className="rounded-lg border border-[#E2E8F0] bg-white p-6">
             <h3 className="font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
-              アプリを入れたが、紙に戻った
+              導入したアプリが定着しない
             </h3>
             <p className="mt-2 text-sm leading-relaxed">
-              施工管理アプリを導入したものの、入力項目が多くて現場が使ってくれない。結局ホワイトボードと紙に逆戻り。
+              施工管理アプリを導入しても入力項目が多く、現場で定着しないため、ホワイトボードと紙の運用に戻ってしまいます。
             </p>
           </div>
         </div>
@@ -214,7 +214,7 @@ export default function Construction() {
       {/* Before / After */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <h2 className="border-l-4 border-[#EA580C] pl-4 font-['Zen_Kaku_Gothic_New'] text-2xl font-black text-[#1E293B] sm:text-3xl">
-          変わるのは事務所だけ。現場はいつも通り。
+          変更が必要なのは事務所の作業のみで、現場の運用は変わりません
         </h2>
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
           <div className="rounded-lg border border-[#E2E8F0] bg-white p-6 sm:p-8">
@@ -227,7 +227,7 @@ export default function Construction() {
               loading="lazy"
             />
             <p className="inline-block rounded-md bg-[#E2E8F0] px-3 py-1 text-sm font-bold text-[#334155]">
-              いま
+              現状
             </p>
             <ol className="mt-6 space-y-4 text-sm leading-relaxed">
               <li className="flex gap-3">
@@ -266,7 +266,7 @@ export default function Construction() {
               loading="lazy"
             />
             <p className="inline-block rounded-md bg-[#EA580C] px-3 py-1 text-sm font-bold text-white">
-              現場れんらく帳を入れると
+              現場れんらく帳の導入後
             </p>
             <ol className="mt-6 space-y-4 text-sm leading-relaxed">
               <li className="flex gap-3">
@@ -274,9 +274,7 @@ export default function Construction() {
                   1
                 </span>
                 現場・協力会社からの連絡手段は
-                <strong className="font-bold text-[#1E293B]">
-                  いままで通り
-                </strong>
+                <strong className="font-bold text-[#1E293B]">従来通り</strong>
               </li>
               <li className="flex gap-3">
                 <span className="mt-0.5 font-['Zen_Kaku_Gothic_New'] font-black text-[#C2410C]">
@@ -305,10 +303,10 @@ export default function Construction() {
       <section className="border-y border-[#E2E8F0] bg-white">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
           <h2 className="border-l-4 border-[#EA580C] pl-4 font-['Zen_Kaku_Gothic_New'] text-2xl font-black text-[#1E293B] sm:text-3xl">
-            仕組みは、受け取り口を足すだけ
+            仕組みは、受け取り口を追加するだけ
           </h2>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed sm:text-base">
-            新しいシステムに「入力してもらう」のではありません。いまの連絡の通り道に受け取り口を1つずつ足して、仕分け係をAIが引き受けます。
+            新しいシステムへの入力を求めるものではありません。現在の連絡経路に受け取り口を1つずつ追加し、仕分けをAIが担います。
           </p>
           <ol className="mt-10 grid gap-6 md:grid-cols-3">
             <li className="rounded-lg border border-[#E2E8F0] bg-[#F8FAFC] p-6">
@@ -321,13 +319,13 @@ export default function Construction() {
                 loading="lazy"
               />
               <p className="font-['Zen_Kaku_Gothic_New'] text-sm font-black text-[#C2410C]">
-                その1
+                STEP 1
               </p>
               <h3 className="mt-2 font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
-                いつものLINEグループに、アカウントを1つ招待
+                現在お使いのLINEグループに、アカウントを1つ招待
               </h3>
               <p className="mt-2 text-sm leading-relaxed">
-                協力会社さんのアプリ追加・操作変更はゼロ。招待した日から、グループのやり取りが自動で記録されていきます。
+                協力会社側でのアプリの追加や操作の変更は不要です。招待した日から、グループのやり取りが自動で記録されていきます。
               </p>
             </li>
             <li className="rounded-lg border border-[#E2E8F0] bg-[#F8FAFC] p-6">
@@ -335,18 +333,18 @@ export default function Construction() {
                 src="/images/solutions/construction/how-fax.webp"
                 width="800"
                 height="800"
-                alt="複合機で受信したFAXが自動で取り込まれるイラスト"
+                alt="受け取ったFAXの紙を複合機でスキャンして取り込むイラスト"
                 className="mb-4 aspect-square w-full rounded-md"
                 loading="lazy"
               />
               <p className="font-['Zen_Kaku_Gothic_New'] text-sm font-black text-[#C2410C]">
-                その2
+                STEP 2
               </p>
               <h3 className="mt-2 font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
-                FAXは、複合機の転送設定でそのまま取り込み
+                FAXは、受け取った紙をスキャンして送るだけ
               </h3>
               <p className="mt-2 text-sm leading-relaxed">
-                FAX番号は変わりません。送ってくる側は今まで通り。受信したFAXが自動で読み取られ、記録に加わります。
+                FAX番号は変わりません。送ってくる側は今まで通り。受け取った紙をスキャン(またはスマホで撮影)して送れば、あとはAIが読み取って記録に加えます。
               </p>
             </li>
             <li className="rounded-lg border border-[#E2E8F0] bg-[#F8FAFC] p-6">
@@ -359,32 +357,32 @@ export default function Construction() {
                 loading="lazy"
               />
               <p className="font-['Zen_Kaku_Gothic_New'] text-sm font-black text-[#C2410C]">
-                その3
+                STEP 3
               </p>
               <h3 className="mt-2 font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
-                AIが現場ごとに仕分けて、いまの台帳形式で記入
+                AIが現場ごとに仕分けて、現在の台帳形式で記入
               </h3>
               <p className="mt-2 text-sm leading-relaxed">
-                「どの現場の・誰からの・何の話か」をAIが判別し、いまお使いのExcel台帳の形式のまま自動で埋めていきます。
+                「どの現場の・誰からの・何の連絡か」をAIが判別し、現在お使いのExcel台帳の形式のまま自動で埋めていきます。
               </p>
             </li>
           </ol>
           <div className="mt-8 max-w-3xl rounded-lg border border-[#E2E8F0] bg-[#F8FAFC] p-5 text-sm leading-relaxed">
             <p className="font-['Zen_Kaku_Gothic_New'] font-bold text-[#1E293B]">
-              先にお伝えしておくこと
+              ご利用にあたっての制約と前提
             </p>
             <ul className="mt-2 list-disc space-y-1 pl-5 text-[#334155]">
               <li>
                 電話の通話内容は自動記録の対象外です。通話後にスマホへひと言吹き込むボイスメモ(自動で文字になります)で補います。
               </li>
               <li>
-                記録が始まるのは、アカウント招待・転送設定をした日からです。過去のやり取りは遡れません。
+                記録が始まるのは、アカウント招待・運用開始をした日からです。過去のやり取りは遡れません。
               </li>
               <li>
                 すでに別のボットや拡張ツールを入れているLINEグループの場合はご利用いただけないことがあります(1グループに参加できる公式アカウントは1つまで)。
               </li>
               <li>
-                FAXの自動取り込みには、ご利用中の複合機に「受信FAXの転送機能」が必要です。対応していない機種の場合は、受信したFAXをスマホで撮影して取り込む方法で対応します(ご相談時に機種を確認させていただきます)。
+                FAXは自動では取り込まれません。受け取った紙をスキャンまたは撮影して送っていただく操作が必要です(そのぶん複合機の設定変更や機種の制約はありません)。
               </li>
             </ul>
           </div>
@@ -395,10 +393,10 @@ export default function Construction() {
       <section>
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
           <h2 className="border-l-4 border-[#EA580C] pl-4 font-['Zen_Kaku_Gothic_New'] text-2xl font-black text-[#1E293B] sm:text-3xl">
-            つくるときの3つの約束
+            システム構築における3つの約束
           </h2>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed sm:text-base">
-            私たちは既製品のアプリを売る会社ではありません。御社の仕事のやり方を先に伺い、それに合わせて必要な分だけ仕組みをつくる会社です。
+            私たちは既製品のアプリを販売する会社ではありません。御社の業務の進め方を先に伺い、それに合わせて必要な分だけ仕組みを構築する会社です。
           </p>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             <div className="rounded-lg border border-[#E2E8F0] bg-white p-6">
@@ -411,10 +409,10 @@ export default function Construction() {
             </div>
             <div className="rounded-lg border border-[#E2E8F0] bg-white p-6">
               <h3 className="font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
-                いまの連絡手段を変えない
+                現在の連絡手段を変えない
               </h3>
               <p className="mt-2 text-sm leading-relaxed">
-                協力会社さんに「新しいアプリを入れてください」とは言いません。FAX・電話・LINEのやり取りを、そのまま記録に変えます。
+                協力会社へ新しいアプリの導入を求めることはありません。FAX・電話・LINEのやり取りを、そのまま記録に変えます。
               </p>
             </div>
             <div className="rounded-lg border border-[#E2E8F0] bg-white p-6">
@@ -422,7 +420,7 @@ export default function Construction() {
                 必要な分だけの最小構成
               </h3>
               <p className="mt-2 text-sm leading-relaxed">
-                高機能で高額なシステムは提案しません。効果の大きいところから小さく始めて、合わなければやめられる形にします。
+                高機能で高額なシステムは提案しません。効果の大きいところから小さく始めて、合わない場合は中止できる形にします。
               </p>
             </div>
           </div>
@@ -458,10 +456,10 @@ export default function Construction() {
               STEP 2
             </p>
             <h3 className="mt-2 font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
-              15分だけ現状を伺う
+              15分で現状を確認
             </h3>
             <p className="mt-2 text-sm leading-relaxed">
-              連絡手段・台帳のつけ方・困っている場面を、オンラインで15分だけ伺います。資料のご用意は不要です。
+              連絡手段・台帳の記録方法・課題が生じている場面を、オンラインで15分お伺いします。資料のご用意は不要です。
             </p>
           </li>
           <li className="rounded-lg border border-[#E2E8F0] bg-white p-6">
@@ -469,10 +467,10 @@ export default function Construction() {
               STEP 3
             </p>
             <h3 className="mt-2 font-['Zen_Kaku_Gothic_New'] text-lg font-bold text-[#1E293B]">
-              できること・やめた方がいいことをご回答
+              実現できること・推奨しないことをご回答
             </h3>
             <p className="mt-2 text-sm leading-relaxed">
-              御社の場合に何が自動化できるか、そして「仕組み化しない方がいい部分」まで含めて無料でお答えします。その場で契約を迫ることはありません。
+              御社の場合に何が自動化できるか、そして「仕組み化を推奨しない部分」まで含めて無料でお答えします。その場で契約を求めることはありません。
             </p>
           </li>
         </ol>
@@ -482,10 +480,10 @@ export default function Construction() {
       <section className="bg-[#1E293B]">
         <div className="mx-auto max-w-6xl px-4 py-16 text-center sm:px-6 sm:py-20 lg:px-8">
           <h2 className="font-['Zen_Kaku_Gothic_New'] text-2xl font-black text-white sm:text-3xl">
-            まずは15分、いまのやり方を聞かせてください
+            まずは15分、現在の運用についてお聞かせください
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-[#94A3B8] sm:text-base">
-            無料です。売り込みはしません。「うちの場合は何ができるのか」への答えだけ持ち帰ってください。
+            相談は無料で、営業活動は行いません。「自社の場合に何が実現できるか」への回答をお持ち帰りいただけます。
           </p>
           <MailCta className="mt-8" />
           <p className="mt-4 text-sm text-[#94A3B8]">

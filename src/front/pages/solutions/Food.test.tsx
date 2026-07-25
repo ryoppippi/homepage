@@ -21,24 +21,49 @@ describe("Food ページ (受注れんらく帳)", () => {
 
     expect(
       screen.getByRole("heading", {
-        name: /毎朝届くFAXの注文書、入力するだけで一日が終わっていませんか/,
+        name: /毎朝届くFAXの注文書の入力作業を自動化します/,
       })
     ).toBeInTheDocument();
 
+    expect(
+      screen.getByRole("heading", { name: "対象となる課題" })
+    ).toBeInTheDocument();
     expect(screen.getByText("FAX・電話受注の手入力")).toBeInTheDocument();
     expect(screen.getAllByText(/67/).length).toBeGreaterThan(0);
     expect(screen.getAllByText(/ハンモック/).length).toBeGreaterThan(0);
   });
 
-  it("仕組み(3ステップ)と先にお伝えしておくことを表示する", () => {
+  it("仕組みの3ステップの見出しを表示する", () => {
     renderFood();
 
     expect(
-      screen.getByText("受注のFAXは、複合機の転送設定でそのまま取り込み")
+      screen.getByRole("heading", {
+        name: "受注のFAXは、届いた紙をスキャンして送るだけ",
+      })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", {
+        name: "電話での注文も、ひと言吹き込むだけで自動記録",
+      })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", {
+        name: "AIが商品・数量を仕分けて、現在の受注管理表の形式で自動記入",
+      })
+    ).toBeInTheDocument();
+  });
+
+  it("ご利用にあたっての制約と前提を表示する", () => {
+    renderFood();
+
+    expect(
+      screen.getByText("ご利用にあたっての制約と前提")
     ).toBeInTheDocument();
     expect(screen.getByText(/賞味期限・ロットの実地確認/)).toBeInTheDocument();
     expect(
-      screen.getByText(/受信FAXの転送機能」が必要です/)
+      screen.getByText(
+        "FAXは自動では取り込まれません。届いた紙をスキャンまたは撮影して送っていただく操作が必要です(そのぶん複合機の設定変更や機種の制約はありません)。"
+      )
     ).toBeInTheDocument();
   });
 
