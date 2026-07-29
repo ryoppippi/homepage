@@ -1,17 +1,24 @@
 import { cloudflare } from "@cloudflare/vite-plugin";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
-import { defineConfig } from "vite-plus";
+import { defineConfig, type lazyPlugins } from "vite-plus";
 import { vitePluginOgp } from "./plugins/vite-plugin-ogp";
+
+// vite-plus の defineConfig は vite フォーク (@voidzero-dev/vite-plus-core) の UserConfig を
+// 受け取るため、実 vite のプラグイン型との構造比較が TypeScript のスタック深度上限を超える
+// (vite-plus 0.2.6 / TS 7.0.2)。core 側の PluginOption[] へキャストして比較を回避する。
+// vite-plus は PluginOption を re-export していないため lazyPlugins の戻り値型から抽出する
+type VpPluginOptions = NonNullable<ReturnType<typeof lazyPlugins>>;
 
 export default defineConfig({
   // VITEST 実行時は jsdom environment と Workers environment が競合するため cloudflare() を無効化
+  // oxlint-disable-next-line typescript/no-unsafe-type-assertion -- VpPluginOptions への意図的なキャスト
   plugins: [
     tailwindcss(),
     react(),
     vitePluginOgp(),
     !process.env.VITEST && cloudflare(),
-  ],
+  ] as VpPluginOptions,
   test: {
     environment: "jsdom",
     globals: true,
